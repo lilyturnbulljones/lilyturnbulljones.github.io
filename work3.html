@@ -1,0 +1,261 @@
+<html>
+	
+	<head>
+	
+		<title> LTJ </title>
+				<link rel="icon" type="image/png" href="ltjlogo.png" />
+
+		<script>
+		function openNav() {
+    document.getElementById("myNav").style.width = "20%";
+}
+
+/* Close when someone clicks on the "x" symbol inside the overlay */
+function closeNav() {
+    document.getElementById("myNav").style.width = "0%";
+}
+
+
+</script>
+	
+		<style>
+		
+			
+#carousel {
+    width: 85%;
+    height: 605px;
+	margin-left:190px;
+
+    
+    
+    overflow-x: auto;
+    white-space:nowrap;
+}
+
+#carousel .slide {
+    display: inline-block;
+}
+
+				
+
+	
+			
+			/* Add some content at the bottom of the video/hh */
+			.content 
+			{
+				 position: absolute;
+				top: 20px;
+				
+				
+				
+				margin-left: 40px;
+
+			}
+			
+				.logo
+			{
+				 position: absolute;
+				bottom: 10px;
+				right: 40px;
+
+			}
+			
+			
+			span:hover 
+			{
+				cursor:pointer;
+			}
+			
+			
+			/* Add an active class to the active dropdown button */
+.active {
+    background-color: green;
+    color: white;
+}
+
+/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+.dropdown-container {
+    display: none;
+    background-color: none;
+    padding-left: 8px;
+}
+
+/* Optional: Style the caret down icon */
+.fa-caret-down {
+    float: right;
+    padding-right: 8px;
+}
+			
+			
+			.overlay {
+    /* Height & width depends on how you want to reveal the overlay (see JS below) */    
+    height: 100%;
+    width: 0;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    background-color: rgb(0,0,0); /* Black fallback color */
+    background-color: rgba(0,0,0, 0.2); /* Black w/opacity */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+
+/* Position the content inside the overlay */
+.overlay-content {
+    position: relative;
+    top: 15%; /* 25% from the top */
+    width: 100%; /* 100% width */
+    text-align: left; /* Centered text/links */
+    margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+	margin-left: 47px;
+}
+
+/* The navigation links inside the overlay */
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+		font-family: Andale Mono,AndaleMono,monospace; 
+
+		
+    font-size: 20px;
+    color: white;
+    display: block; /* Display block instead of inline */
+    transition: 0.3s; /* Transition effects on hover (color) */
+}
+
+	.overlay a, .dropdown-btn {
+		padding: 8px;
+		text-decoration: none;
+		font-family: Andale Mono,AndaleMono,monospace; 
+		background: none;
+		border:none;
+		font-size: 20px;
+		color: white;
+		width:100%;
+		text-align: left;
+		cursor: pointer;
+		outline: none;
+}
+
+	.dropdown-container a {
+	font-size:12px;
+	}
+
+	.overlay a:hover, .dropdown-btn:hover {
+		color: pink;
+	}
+
+	/* When you mouse over the navigation links, change their color */
+	.overlay a:hover, .overlay a:focus {
+		color: pink;
+	}
+
+	/* Position the close button (top right corner) */
+	.overlay .closebtn {
+		position: absolute;
+		top: 20px;
+		right: 45px;
+		font-size: 60px;
+	}
+
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+@media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+
+	
+			
+		</style>
+		
+		
+			
+	</head>
+	
+	<body>
+	
+		
+		<!-- The overlay -->
+<div id="myNav" class="overlay">
+
+  <!-- Button to close the overlay navigation -->
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+  <!-- Overlay content -->
+  <div class="overlay-content">
+    <a href="index.html">HOME </a>
+	<a href="about.html">ABOUT</a>
+    <button class="dropdown-btn">WORK
+    <i class="fa fa-caret-down"></i>
+	</button>
+	<div class="dropdown-container">
+   <a href="work4.html">INTIMACY ISSUE </a>
+	 
+    <a href="work2.html">DIVIDE AND DISSOLVE
+<br>FOR I-D</a>
+<a href="work1.html">DISSOCIATE DEGREE</a>
+    <a href="work3.html">SUCCUBABY</a>
+	</div>
+	<a href="Resume.pdf" target="_blank"  >CV</a>
+	<button class="dropdown-btn">CONTACT
+    <i class="fa fa-caret-down"></i>
+	</button>
+	<div class="dropdown-container">
+    <a href="http://instagram.com/lilyturnbulljones" target="_blank">INSTAGRAM</a>
+    <a href="https://mail.google.com/mail/u/0/?view=cm&fs=1&to=lilyturnbulljones@gmail.com&tf=1"target="_blank" >EMAIL</a>
+    
+	</div>
+	
+	
+	
+ 
+     
+  </div>
+  
+ 
+</div>
+
+
+	
+	<div id="carousel">
+   <div class="slide"><img src="https://i.imgur.com/N2ic7mc.jpg"height="580px"/></div> 
+  <div class="slide"><img src="https://i.imgur.com/b2Oqdmu.jpg"height="580px"/></div> 
+  <div class="slide"><img src="https://i.imgur.com/e8FSxjO.jpg"height="580px"/></div> 
+  <div class="slide"><img src="https://i.imgur.com/1BfArdY.jpg"height="580px"/></div> 
+
+</div>
+
+
+
+
+
+		<!-- Optional: some overlay text to describe the video -->
+		 <div class="content">
+		 <span onclick="openNav()"><img src="http://cdn.shopify.com/s/files/1/1157/6300/products/s842943533399395462_p45_i25_w594_grande.png?v=1455602106" width="100px"></span>
+		
+		</div>
+	<script>
+/* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+var dropdown = document.getElementsByClassName("dropdown-btn");
+var i;
+
+for (i = 0; i < dropdown.length; i++) {
+  dropdown[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var dropdownContent = this.nextElementSibling;
+    if (dropdownContent.style.display === "block") {
+      dropdownContent.style.display = "none";
+    } else {
+      dropdownContent.style.display = "block";
+    }
+  });
+}
+</script>
+	
+	</body>
+	
+</html>
